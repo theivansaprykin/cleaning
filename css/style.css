@@ -25,12 +25,7 @@ h1 {
 h2 {
   margin: 0px;
 }
-h3 {
-  margin: 0px;
-}
-img {
-  height: 100%;
-}
+
 ul {
   list-style: none;
   margin: 0;
@@ -38,12 +33,13 @@ ul {
 }
 
 .container {
-  max-width: 1870px;
-  padding-left: 250px;
-  padding-right: 250px;
-  font-weight: 400;
+  max-width: 1420px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 5px;
+}
+.color-blue {
+  color: #00a2ff;
 }
 
 /* header */
@@ -150,25 +146,195 @@ ul {
   border-radius: 20px;
 }
 .search-info {
+  display: flex;
   background: url(../img/header-down.png);
-  height: 848px;
+  height: 629px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 134px;
+  justify-content: space-between;
 }
-.info-left {
-  margin-left: 255px;
-}
+
 .info-left__blocks:not(:last-child) {
   margin-bottom: 155px;
 }
 .info-left__blocks:nth-child(2n + 1) {
   margin-left: 100px;
 }
+
 .info-center {
+  display: flex;
   background: url(../img/Group\ 1226.png);
   height: 544px;
   max-width: 544px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: none;
+}
+.info-right {
+  max-width: 580px;
+  align-items: center;
+  margin-top: 100px;
+}
+.info-right__header {
+  margin-bottom: 40px;
+}
+.info-right__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+.tru {
+  padding-bottom: 20px;
+}
+.outline-text {
+  background-color: #0070af;
+  height: 50px;
+  text-align: center;
+  padding-top: 14px;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* Service */
+
+.service {
+  background: url(../img/bubble.png);
+  background-color: #e5e5e5;
+}
+.service-header {
+  padding-top: 150px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.service-header {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48.76px;
+}
+.service-body {
+  background-color: white;
+  padding-top: 70px;
+  padding-left: 100px;
+}
+.service-body:not(:last-child) {
+  margin-bottom: 40px;
+}
+.service-body__header {
+  color: #0070af;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36.57px;
+}
+.service-body__link {
+  max-width: 1153px;
+  margin-bottom: 70px;
+}
+.service-body__link__a:not(:last-child) {
+  margin-right: 20px;
+}
+.service-body__link__a {
+  color: #00a2ff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.service-body__info {
+  display: flex;
+  justify-content: space-between;
+}
+.service-body__info__text__a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  max-width: 71%;
+}
+.service-body__info__price {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 39px;
+  color: #0d0d0d;
+  margin-bottom: 20px;
+}
+.service-body__info__button {
+  background-color: #ff4a3f;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 20px 90px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* benefits */
+
+.benefits {
+  background-color: #e5e5e5;
+  padding-top: 27px;
+}
+.benefits-header {
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48.76px;
+}
+.benefits-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.benefits-info__tab {
+  display: flex;
+  background-color: white;
+  padding: 25px 0;
+  border-radius: 5px;
+}
+.benefits-info__tab__text {
+  margin-left: 33px;
+}
+.benefits-info__tab__p {
+  max-width: 87%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.benefits-info__tab__h3 {
+  margin: 0 0 10px 0;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21.94px;
+}
+
+/* info */
+
+.info {
+  background: url(/img/bubble-2.png);
+  background-color: #e5e5e5;
+  padding-top: 150px;
+}
+.info-body__img {
+  max-width: 1600px;
+}
+.info-body__h2 {
+  text-align: center;
+}
+.info-body__performance {
+  display: flex;
+}
+.info-body__performance__circle {
+  position: relative;
+}
+.info-body__performance__circle__widget {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
