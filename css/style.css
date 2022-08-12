@@ -266,6 +266,10 @@ ul {
   font-weight: 800;
   font-size: 18px;
   line-height: 20px;
+  cursor: pointer;
+}
+.service-body__info__button1:hover {
+  color: blue;
 }
 
 /* benefits */
@@ -321,9 +325,28 @@ ul {
 }
 .info-body__h2 {
   text-align: center;
+  margin-bottom: 80px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48.76px;
 }
 .info-body__performance {
   display: flex;
+}
+.info-body__performance__2 {
+  margin-top: 140px;
+}
+.info-body__performance__4 {
+  margin-top: 167px;
+}
+.info-body__performance__img__1 {
+  margin-top: 207px;
+}
+.info-body__performance__img__2 {
+  margin-top: 140px;
+}
+.info-body__performance__img__3 {
+  margin-top: 194px;
 }
 .info-body__performance__circle {
   position: relative;
@@ -337,4 +360,187 @@ ul {
   align-items: center;
   text-align: center;
   transform: translate(-50%, -50%);
+}
+
+/* modal form */
+
+/* .modal {
+  display: flex;
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0070af;
+  padding: 89px 78px 24px 120px;
+} */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  padding-top: 100px; /* Расположение коробки */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0); /* Цвет запасной вариант  */
+  background-color: rgba(0, 0, 0, 0.4); /*Черный с непрозрачностью */
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  padding-top: 89px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 73%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.modal-content__h2 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48.76px;
+  margin-bottom: 20px;
+}
+.modal-content {
+  text-align: center;
+}
+.modal-content__p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 40px;
+}
+.modal-button {
+  position: absolute;
+  margin-left: 90%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.modal-img {
+  margin-left: 46px;
+}
+.modal-content__form__input {
+  border-radius: 5px;
+  padding-bottom: 34px;
+  border-color: #c4c4c4;
+}
+.modal-content__form {
+  flex-direction: column;
+  display: flex;
+}
+.modal-content__form__input:first-child {
+  margin-bottom: 20px;
+}
+.modal-content__form__input:not(:first-child) {
+  margin-bottom: 30px;
+}
+.modal-content__button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  background-color: #ff4a3f;
+  border: none;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.modal-content__form__p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+
+/* answers */
+
+.answers {
+  background: url(/img/bubble-3.png);
+  background-color: #e5e5e5;
+  padding-top: 150px;
+}
+.answers-header {
+  margin-bottom: 85px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48.76px;
+}
+.answers-body {
+  display: flex;
+  justify-content: space-between;
+}
+.answers-left {
+  max-width: 49.5%;
+  width: 100%;
+}
+.answers-right {
+  max-width: 49.5%;
+  width: 100%;
+}
+.answers-left__button {
+  max-width: 700px;
+}
+.answers-right__button {
+  max-width: 700px;
+}
+.answers-left__blocks {
+  display: grid;
+}
+.answers-left__blocks__button {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-color: #0070af;
+  align-items: center;
+}
+.answers-right__blocks__button {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-color: #0070af;
+  align-items: center;
+}
+.answers__blocks__h3 {
+  color: #0070af;
+}
+.answers-right__blocks__svg {
+  margin-left: auto;
+}
+.answers-left__blocks__svg {
+  margin-left: auto;
+}
+.answers-left__blocks:not(:last-child) {
+  margin-bottom: 20px;
+}
+.answers-right__blocks:not(:last-child) {
+  margin-bottom: 20px;
 }
